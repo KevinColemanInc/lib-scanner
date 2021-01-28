@@ -55,7 +55,7 @@ var regexProblems = []report.Problem{
 	report.Problem{
 		Severity:    5,
 		Name:        "#eval",
-		Description: "Uses the send method which can be used for RCE",
+		Description: "Uses the eval method which can be used for RCE",
 		Re:          regexp.MustCompile(`^([^#\n]*;? *eval[\( ].*)`),
 	},
 	report.Problem{
